@@ -34,7 +34,12 @@ private:
 };
 
 
-
+bst::~bst(){
+    while (root != 0)
+    {
+        del_name(root-> county_name);
+    }
+}
 
 bool BST::empty(){
     return (root = 0);
